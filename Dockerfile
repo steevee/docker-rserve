@@ -36,6 +36,9 @@ RUN R --version
 
 #install R packages
 RUN sudo su - -c "/usr/bin/R -e \"install.packages('Rserve', repos='http://cran.r-project.org')\""
+RUN sudo su - -c "/usr/bin/R -e \"install.packages('dplyr', repos='http://cran.r-project.org')\""
+RUN sudo su - -c "/usr/bin/R -e \"install.packages('data.table', repos='http://cran.r-project.org')\""
+RUN sudo su - -c "/usr/bin/R -e \"install.packages('reshape2', repos='http://cran.r-project.org')\""
 
 # adding start R script: you can find the RScript on the docker github
 ADD start.R start.R
