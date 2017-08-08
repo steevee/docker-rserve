@@ -46,6 +46,7 @@ RUN sudo su - -c "/usr/bin/R -e \"install.packages('showtext', repos='http://cra
 RUN sudo su - -c "/usr/bin/R -e \"install.packages('tm', repos='http://cran.r-project.org')\""
 RUN sudo su - -c "/usr/bin/R -e \"install.packages('wordcloud', repos='http://cran.r-project.org')\""
 RUN sudo su - -c "/usr/bin/R -e \"install.packages('RPostgreSQL', repos='http://cran.r-project.org')\""
+RUN sudo su - -c "/usr/bin/R -e \"install.packages('ratesci', repos='http://cran.r-project.org')\""
 
 # adding start R script: you can find the RScript on the docker github
 ADD start.R start.R
